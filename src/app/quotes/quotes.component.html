@@ -1,4 +1,6 @@
-<div *ngFor='let quote of quotes'>
+<div *ngFor='let quote of quotes;let i = index'>
   <li>{{quote.id}}.{{quote.name}}</li>
-  <app-quote-detail [quote]='quote'></app-quote-detail>
+  <button class="btn btn-primary m-2" (click)="showMore(i)">Show More</button>
+  <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuotes($event,i)'>
+  </app-quote-detail>
 </div>
