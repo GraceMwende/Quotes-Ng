@@ -49,6 +49,6 @@ export class QuotesComponent implements OnInit {
   }
 
   clickMe2(){
-    this.clickCount2--
+    this.clickCount2++
   }
 }
