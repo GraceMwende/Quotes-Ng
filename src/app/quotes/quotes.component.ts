@@ -8,12 +8,12 @@ import { Quote } from '../quote';
 })
 export class QuotesComponent implements OnInit {
   quotes: Quote[] = [
-    new Quote(1, "Tech Quote1", "coding is the future1coding is the future1coding is the future1coding is the future1coding is the future1coding is the future1coding is the future1coding is the future1coding is the future1coding is the future1coding is the future1", "NelsonMandela","Grace",new Date(2021,11,30)),
-    new Quote(2, "Tech Quote2", "coding is the future2", "NelsonMandela","Grace",new Date(2022,0,1)),
-    new Quote(3, "Tech Quote3", "coding is the future3", "NelsonMandela","Grace", new Date()),
-    new Quote(4, "Tech Quote4", "coding is the future4", "NelsonMandela","Grace", new Date()),
-    new Quote(5, "Tech Quote5", "coding is the future5", "NelsonMandela","Grace", new Date()),
-    new Quote(6, "Tech Quote6", "coding is the future6", "NelsonMandela","Grace", new Date()),
+    new Quote(1, "Tech Quote1", "coding is the future1coding is the future1coding is the future1coding is the future1coding is the future1coding is the future1coding is the future1coding is the future1coding is the future1coding is the future1coding is the future1", "NelsonMandela","Grace",new Date(2021,11,30), 0, 0),
+    new Quote(2, "Tech Quote2", "coding is the future2", "NelsonMandela","Grace",new Date(2022,0,1), 0, 0),
+    new Quote(3, "Tech Quote3", "coding is the future3", "NelsonMandela","Grace", new Date(), 0, 0),
+    new Quote(4, "Tech Quote4", "coding is the future4", "NelsonMandela","Grace", new Date(), 0, 0),
+    new Quote(5, "Tech Quote5", "coding is the future5", "NelsonMandela","Grace", new Date(), 0, 0),
+    new Quote(6, "Tech Quote6", "coding is the future6", "NelsonMandela","Grace", new Date(),0, 0),
 
   ]
 
@@ -41,14 +41,13 @@ export class QuotesComponent implements OnInit {
     this.quotes.push(quote);
   } 
 
-  clickCount = 0;
+  
   clickCount2 =0;
-
-  clickMe(){
-    this.clickCount++
+  upVote(index:any){
+    this.quotes[index].upVote++
   }
 
-  clickMe2(){
-    this.clickCount2++
+  downVote(index:any){
+    this.quotes[index].downVote++
   }
 }
