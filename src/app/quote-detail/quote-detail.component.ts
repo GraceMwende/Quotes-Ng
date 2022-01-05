@@ -4,19 +4,17 @@ import { Quote } from '../quote';
 @Component({
   selector: 'app-quote-detail',
   templateUrl: './quote-detail.component.html',
-  styleUrls: ['./quote-detail.component.css']
+  styleUrls: ['./quote-detail.component.css'],
 })
 export class QuoteDetailComponent implements OnInit {
   @Input() quote!: Quote;
   @Output() isComplete = new EventEmitter<boolean>();
 
-  deleteQuote(complete:boolean){
+  deleteQuote(complete: boolean) {
     this.isComplete.emit(complete);
   }
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

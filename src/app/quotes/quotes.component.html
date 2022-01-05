@@ -5,7 +5,7 @@
 
   <div class="col-md-6">
     <div *ngFor='let quote of quotes;let i = index'>
-      <li>{{quote.id}}.{{quote.name}}</li>
+      <li appHighlight>{{quote.id}}.{{quote.name}}</li>
       <button (click)=upVote(i)>Upvote{{quote.upVote}}</button>
       <button (click)=downVote(i)>Downvote</button>{{quote.downVote}}
       <button class="btn btn-primary m-2" (click)="showMore(i)">Show More</button>
