@@ -1,0 +1,12 @@
+#quotes-bg {
+  background-image: url("../assets/images/first-bg.jpg");
+  background-position: center;
+  height: 70vh;
+  background-size: cover;
+}
+
+.bg-text {
+  color: white;
+  position: relative;
+  top: 20%
+}
