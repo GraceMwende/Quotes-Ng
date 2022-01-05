@@ -40,4 +40,15 @@ export class QuotesComponent implements OnInit {
     quote.id= quoteLength+1;
     this.quotes.push(quote);
   } 
+
+  clickCount = 0;
+  clickCount2 =0;
+
+  clickMe(){
+    this.clickCount++
+  }
+
+  clickMe2(){
+    this.clickCount2--
+  }
 }
