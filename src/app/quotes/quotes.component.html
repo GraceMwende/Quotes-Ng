@@ -20,10 +20,9 @@
               aria-hidden="true"></i></button>{{quote.downVote}}
         </div>
 
+        <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuotes($event,i)'>
+        </app-quote-detail>
       </div>
-
-      <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuotes($event,i)'>
-      </app-quote-detail>
     </div>
   </div>
 
