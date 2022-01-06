@@ -1,3 +1,10 @@
 li {
   display: inline-block;
 }
+
+.like {
+  background-color: transparent;
+  border: none;
+  color: #38010f;
+  font-size: 20px;
+}

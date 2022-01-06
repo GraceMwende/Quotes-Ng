@@ -4,20 +4,17 @@ import { Quote } from '../quote';
 @Component({
   selector: 'app-quotes-form',
   templateUrl: './quotes-form.component.html',
-  styleUrls: ['./quotes-form.component.css']
+  styleUrls: ['./quotes-form.component.css'],
 })
 export class QuotesFormComponent implements OnInit {
-
-  newQuote= new Quote(2, "", "", "","Grace",new Date(),0,0);
+  newQuote = new Quote(2, '', '', '', '', new Date(), 0, 0);
   @Output() addQuote = new EventEmitter<Quote>();
 
-  submitQuote(){
+  submitQuote() {
     this.addQuote.emit(this.newQuote);
   }
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

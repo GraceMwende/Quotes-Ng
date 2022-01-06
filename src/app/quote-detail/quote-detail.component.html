@@ -1,4 +1,4 @@
-<p>{{quote.author}}</p>
-<p>{{quote.description}} ~ {{quote.dateCreated |date}}</p>
+<p>Author: {{quote.author}}</p>
+<p>Created On: {{quote.dateCreated |date}}</p>
 <p>{{quote.dateCreated |dayCount}}</p>
-<button class="btn btn-primary" (click)='deleteQuote(true)'>Delete</button>
+<button class="btn btn-danger like" (click)='deleteQuote(true)'><i class="fa fa-trash" aria-hidden="true"></i></button>
