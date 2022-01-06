@@ -38,36 +38,6 @@ export class QuotesComponent implements OnInit {
       0,
       0
     ),
-    new Quote(
-      4,
-      'Tech Quote4',
-      'coding is the future4',
-      'NelsonMandela',
-      'Grace',
-      new Date(),
-      0,
-      0
-    ),
-    new Quote(
-      5,
-      'Tech Quote5',
-      'coding is the future5',
-      'NelsonMandela',
-      'Grace',
-      new Date(),
-      0,
-      0
-    ),
-    new Quote(
-      6,
-      'Tech Quote6',
-      'coding is the future6',
-      'NelsonMandela',
-      'Grace',
-      new Date(),
-      0,
-      0
-    ),
   ];
 
   showMore(index: any) {

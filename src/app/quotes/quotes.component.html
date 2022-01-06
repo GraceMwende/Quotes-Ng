@@ -3,18 +3,25 @@
     <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>
   </div>
 
+
   <div class="col-md-6">
     <div *ngFor='let quote of quotes;let i = index'>
 
-      <div>
+      <div class="quoting">
         <li appHighlight>{{quote.id}}.{{quote.name}}</li>
+        <button class="btn btn-primary btn-sm mx-5" (click)="showMore(i)">Show More</button>
         <p>{{quote.description}}</p>
-        <p>Posted by ~ {{quote.personSubmitting}}</p>
+
+        <div>
+          <p>Posted by ~ {{quote.personSubmitting}}</p>
+          <button class="like" (click)=upVote(i)><i class="fa fa-thumbs-up"
+              aria-hidden="true"></i></button>{{quote.upVote}}
+          <button class="like" (click)=downVote(i)><i class="fa fa-thumbs-down"
+              aria-hidden="true"></i></button>{{quote.downVote}}
+        </div>
+
       </div>
-      <button class="btn btn-primary m-2" (click)="showMore(i)">Show More</button>
-      <button class="like" (click)=upVote(i)><i class="fa fa-thumbs-up" aria-hidden="true"></i></button>{{quote.upVote}}
-      <button class="like" (click)=downVote(i)><i class="fa fa-thumbs-down"
-          aria-hidden="true"></i></button>{{quote.downVote}}
+
       <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuotes($event,i)'>
       </app-quote-detail>
     </div>
