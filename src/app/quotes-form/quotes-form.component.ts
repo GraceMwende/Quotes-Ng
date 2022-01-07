@@ -12,6 +12,7 @@ export class QuotesFormComponent implements OnInit {
 
   submitQuote() {
     this.addQuote.emit(this.newQuote);
+    alert('Quote submitted');
   }
 
   constructor() {}

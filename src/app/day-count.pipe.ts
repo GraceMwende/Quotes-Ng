@@ -15,6 +15,10 @@ export class DayCountPipe implements PipeTransform {
       Math.abs(todayWithNoTime - value) / (1000 * 86400)
     );
 
-    return dateDifference;
+    if (dateDifference >= 1 && todayWithNoTime > value) {
+      return dateDifference;
+    } else {
+      return 0;
+    }
   }
 }

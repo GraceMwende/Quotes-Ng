@@ -12,10 +12,10 @@
     </div>
 
     <div class="form-group">
-      <label for="">Quote Name</label>
+      <label for="">Quote Title</label>
       <input type="text" id="" class="form-control" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
       <div [hidden]="name.valid || name.pristine" class="text-danger">
-        <p>*Must indicate a quote</p>
+        <p>*Must indicate a quote Title</p>
       </div>
 
     </div>
@@ -41,7 +41,7 @@
     </div>
 
     <div class="text-center">
-      <button class="btn btn-success m-4 ">Add Quote</button>
+      <button type="submit" [disabled]="!quoteForm.valid" class="btn btn-success m-4 ">Add Quote</button>
     </div>
   </form>
 </div>
