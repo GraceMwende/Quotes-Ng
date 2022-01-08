@@ -18,3 +18,11 @@ main {
 .homelinks {
   margin: auto;
 }
+
+footer {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
