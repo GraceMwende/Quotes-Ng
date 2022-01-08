@@ -10,7 +10,26 @@ li {
 }
 
 .quoting {
-  border: 2px solid rgb(227, 197, 230);
-  border-radius: 10px;
-  margin: 4%;
+  /* margin: 4%;
+  padding: 2%; */
+}
+
+.btnright {
+  float: right;
+  position: relative;
+  top: -38px;
+}
+
+.card-header {
+  font-family: sans-serif;
+}
+
+.blockquote p {
+  font-family: 'Cormorant Infant', serif;
+}
+
+.blockquote footer {
+  font-family: 'Estonia', cursive;
+  font-size: 130%;
+  font-weight: bold
 }
