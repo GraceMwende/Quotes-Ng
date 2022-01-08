@@ -17,4 +17,5 @@ form {
   background-image: url("/assets/images/formb2.jpg");
   background-position: center;
   background-size: cover;
+  padding: 5%;
 }
