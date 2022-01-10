@@ -11,7 +11,7 @@ Application where users can create quotes and have those quotes voted on whether
 ## Project picture
 
 <img src="src/assets/images/homess.png" alt="Home page" />
-<img src="src/assets/images/Detailsss.png" alt="Form and the quotes" />
+<img src="src/assets/images/details.png" alt="Form and the quotes" />
 
 #### By **List of contributors**
 
