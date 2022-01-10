@@ -8,6 +8,11 @@ https://gracemwende.github.io/Quotes-Ng/
 
 Application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational.
 
+## Project picture
+
+<img src="src/assets/images/homess.png" alt="Home page" />
+<img src="src/assets/images/Detailsss.png" alt="Form and the quotes" />
+
 #### By **List of contributors**
 
 @GraceMwende
