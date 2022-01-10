@@ -7,6 +7,9 @@ import { Quote } from '../quote';
   styleUrls: ['./quotes.component.css'],
 })
 export class QuotesComponent implements OnInit {
+  prelike: number = 0;
+  afterlike: number = 0;
+
   quotes: Quote[] = [
     new Quote(
       1,
@@ -71,5 +74,13 @@ export class QuotesComponent implements OnInit {
 
   downVote(index: any) {
     this.quotes[index].downVote++;
+  }
+
+  highestVotes() {
+    for (let i = 0; i < this.quotes.length; i++) {
+      this.prelike = this.quotes[i].upVote;
+      this.prelike > this.afterlike ? (this.afterlike = this.prelike) : false;
+    }
+    return this.afterlike;
   }
 }

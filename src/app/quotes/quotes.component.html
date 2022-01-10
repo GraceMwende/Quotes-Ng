@@ -10,7 +10,9 @@
       <div class="card mb-5">
         <div class="quoting">
           <div class="card-header">
-            <li>{{quote.id}}.{{quote.name}}</li>
+            <li appHighlight *ngIf="highestVotes()===quote.upVote && quote.upVote>0">{{quote.id}}.{{quote.name}}</li>
+            <li *ngIf="highestVotes() !== quote.upVote || quote.upVote ===0">{{quote.id}}.{{quote.name}}</li>
+
           </div>
           <button class="btn btn-dark btn-sm mx-5 btnright" (click)="showMore(i)">Show More</button>
           <div class="card-body">
