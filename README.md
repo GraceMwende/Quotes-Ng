@@ -2,6 +2,8 @@
 
 ## Live Link
 
+https://gracemwende.github.io/Quotes-Ng/
+
 #### Application Description
 
 Application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational.
@@ -15,9 +17,13 @@ Application where users can create quotes and have those quotes voted on whether
 --see Quotes created before
 
 - Vote on whether they are inspirational or note
-  -Delete a quote
-  -Create a quote
-  -Highlight quote with the highest upvotes
+- Delete a quote
+- Create a quote
+- Highlight quote with the highest upvotes
+
+## Known Bugs
+
+Background image of the form not visible on deployment
 
 ## Setup/Installation Requirements
 
