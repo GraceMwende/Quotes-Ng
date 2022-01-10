@@ -14,9 +14,8 @@ Application where users can create quotes and have those quotes voted on whether
 
 #### BDD
 
---see Quotes created before
-
-- Vote on whether they are inspirational or note
+- see Quotes created before
+- Vote on whether they are inspirational or terrible
 - Delete a quote
 - Create a quote
 - Highlight quote with the highest upvotes
